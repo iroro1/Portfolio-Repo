@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
 }
 .cont {
-
   width: 200px;
   height: 200px;
   display: flex;
@@ -37,7 +36,6 @@ body {
 }
 
 .box2 {
-
   border: 2px solid white;
   width: 20px;
   height: 20px;
@@ -153,5 +151,5 @@ table td a {
   text-decoration: none;
 }
 table {
-  line-height: 3;
+  line-height: 1.3;
 }
