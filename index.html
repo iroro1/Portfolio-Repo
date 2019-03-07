@@ -631,7 +631,20 @@
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
 
+      $(".navbar a, .btn").on("click", function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
 
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top - 70
+      },
+      1200
+    );
+  }
+});
     </script>
   </body>
 </html>
