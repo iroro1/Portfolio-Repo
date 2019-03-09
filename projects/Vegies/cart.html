@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Veggies | Order</title>
+    <link rel="shortcut icon" href="./img/bodybg.jbg.jpg" type="image/x-icon" />
+    <script src="./js/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand nav-item text-warning "
+          ><span> <i class="fas fa-carrot fa-3x"></i> </span
+          ><span class="h1">Veggies</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navsm"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navsm" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item m-2">
+              <a href="index.html" class="nav-link active ">Home</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="cart.html" class="nav-link"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary">
+      <div class="row justify-content-center" >
+          <div class="col-md-4 text-white text-center py-5">
+            <div class="container">
+              <div class="card">
+                <div class="card-title text-dark py-0">
+                  <h3 class="border-bottom mb-0">Order List</h3>
+                </div>
+                <div class="card-body bg-dark">
+                  <table>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/Order1.jpg"
+                          alt="one"
+                          class="mr-2 my-1"
+                        />
+                      </td>
+                      <td class="h4">Menu One</td>
+
+                      <td class="pl-5">
+                        <span id="qty" class="h4">2</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/Order4.jpg"
+                          alt="one"
+                          class="mr-2 my-1"
+                        />
+                      </td>
+                      <td class="h4">Menu Four</td>
+
+                      <td class="pl-5">
+                        <span id="qty" class="h4">8</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/Order2.jpg"
+                          alt="one"
+                          class="mr-2 my-1"
+                        />
+                      </td>
+                      <td class="h4">Menu Two</td>
+
+                      <td class="pl-5">
+                        <span id="qty" class="h4">6</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img
+                          src="./img/Order3.jpg"
+                          alt="one"
+                          class="mr-2 my-1"
+                        />
+                      </td>
+                      <td class="h4">Menu Three</td>
+
+                      <td class="pl-5">
+                        <span id="qty" class="h4">4</span>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <form class="form my-5 p-3 bg-light text-center">
+            <h3>Payment</h3>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Address" />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="Phone Number"
+              />
+            </div>
+            <div class="form-group">
+              <select class="form-control" name="Payment" id="payment">
+                <option value="Pos">Pos (Only for Lagos)</option>
+                <option value="Pos">Bank Transfer</option>
+                <option value="Pos" selected>Quick Teller</option>
+                <option value="Pos">Paypal</option>
+              </select>
+            </div>
+            <input
+              type="submit"
+              class="btn btn-success btn-block"
+              value="Pay"
+            />
+          </form>
+        </div>
+      </div>
+    </header>
+
+
+    <section>
+      <div class="row py-4 bg-secondary text-white">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 ad ">
+          <div class="container">
+            <div class="d-flex"><i class="fas fa-home fa-2x mr-3 text-warning"></i><h4 class="reduce">Number 4, XYZ road, Lagos, Nigeria.</h4></div>
+            <div class="d-flex"><i class="fas fa-envelope fa-2x mr-3 text-warning"></i><h4 class="reduce">Vegg@veg.com</h4></div>
+            <div class="d-flex"><i class="fas fa-envelope fa-2x mr-3 text-warning"></i><h4 class="reduce">Vegg@gmail.com</h4></div>
+            <div class="d-flex"><i class="fas fa-phone fa-2x mr-3 text-warning"></i><h4 class="reduce">+234-533-546-1235</h4></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+
+    </section>
+    <!-- footer -->
+    <footer
+      id="main-footer"
+      class="text-center overlay bg-dark text-white  py-1"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>
+              Copyright © <span>2019</span> Veggies | Design by
+              <a
+                href="https://ojigboleo.netlify.com/"
+                target="_blank"
+                class="nav-link text-white d-inline"
+              >
+                Leo Ojigbo</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/popper.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+      //   <span id="year"></span> code for auto date gen
+
+      // Configure Carousel Slider
+      $(".carousel").carousel({
+        interval: 6000,
+        pause: "hover"
+      });
+
+      $(".slider").slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1
+      });
+
+      //   llll
+      //   function test() {
+      //     i = 0;
+      //     document.getElementById("orde").innerHTML = i + 1;
+      //   }
+      //   i = 0;
+      //   document.getElementById("orde").innerHTML = i + 1;
+    </script>
+  </body>
+</html>

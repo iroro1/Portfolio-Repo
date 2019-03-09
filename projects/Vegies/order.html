@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Veggies | Order</title>
+    <link rel="shortcut icon" href="./img/bodybg.jbg.jpg" type="image/x-icon" />
+    <script src="./js/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand nav-item text-warning "
+          ><span> <i class="fas fa-carrot fa-3x"></i> </span
+          ><span class="h1">Veggies</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navsm"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navsm" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item m-2">
+              <a href="index.html" class="nav-link active ">Home</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="cart.html" class="nav-link"
+                ><i class="fas fa-shopping-cart"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary">
+      <div class="container">
+        <div class="row bg-primary text-white py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7 text-center">
+                <h2 class="display-3">Make Your Choices and Order now!</h2>
+                <p class="lead">*Free Delivery within Lagos.</p>
+              </div>
+              <div class="col-md-5 text-center">
+                <div class="card">
+                  <div class="card-title text-dark py-1">
+                    <h3 class="border-bottom mb-0">Order List</h3>
+                  </div>
+                  <div class="card-body bg-dark">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            src="./img/Order1.jpg"
+                            alt="one"
+                            class="mr-2 my-1"
+                          />
+                        </td>
+                        <td class="h4">Menu One</td>
+
+                        <td class="pl-5">
+                          <span
+                            onclick="incrementValue()"
+                            id="inc"
+                            class="btn btn-sm btn-success mr-1"
+                            >+</span
+                          ><span id="qty" class="h6">2</span
+                          ><span id="dec" class="btn btn-sm btn-danger ml-2"
+                            >-</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            src="./img/Order4.jpg"
+                            alt="one"
+                            class="mr-2 my-1"
+                          />
+                        </td>
+                        <td class="h4">Menu Four</td>
+
+                        <td class="pl-5">
+                          <span
+                            onclick="incrementValue()"
+                            id="inc"
+                            class="btn btn-sm btn-success mr-1"
+                            >+</span
+                          ><span id="qty" class="h6">8</span
+                          ><span id="dec" class="btn btn-sm btn-danger ml-2"
+                            >-</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            src="./img/Order2.jpg"
+                            alt="one"
+                            class="mr-2 my-1"
+                          />
+                        </td>
+                        <td class="h4">Menu Two</td>
+
+                        <td class="pl-5">
+                          <span
+                            onclick="incrementValue()"
+                            id="inc"
+                            class="btn btn-sm btn-success mr-1"
+                            >+</span
+                          ><span id="qty" class="h6">6</span
+                          ><span id="dec" class="btn btn-sm btn-danger ml-2"
+                            >-</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img
+                            src="./img/Order3.jpg"
+                            alt="one"
+                            class="mr-2 my-1"
+                          />
+                        </td>
+                        <td class="h4">Menu Three</td>
+
+                        <td class="pl-5">
+                          <span
+                            onclick="incrementValue()"
+                            id="inc"
+                            class="btn btn-sm btn-success mr-1"
+                            >+</span
+                          ><span id="qty" class="h6">4</span
+                          ><span id="dec" class="btn btn-sm btn-danger ml-2"
+                            >-</span
+                          >
+                        </td>
+                      </tr>
+                    </table>
+
+                    <a href="cart.html" class="btn btn-success btn-block mt-5"
+                      >Go to Payment</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Orders -->
+    <section id="order" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="./img/Order1.jpg"
+                alt="one"
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-center">Menu One</h4>
+                <hr />
+                <a id="od1" href="#" class="btn btn-outline-primary btn-block"
+                  >Add to Cart</a
+                >
+                <div class="orde"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="./img/Order2.jpg"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-center">Menu Two</h4>
+                <hr />
+                <a id="od2" href="#" class="btn btn-outline-primary btn-block"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="./img/Order3.jpg"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-center">Menu Three</h4>
+                <hr />
+                <a id="od3" href="#" class="btn btn-outline-primary btn-block"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card">
+              <img
+                src="./img/Order4.jpg"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title text-center">Menu Four</h4>
+                <hr />
+                <a id="od4" href="#" class="btn btn-outline-primary btn-block"
+                  >Add to Cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      id="main-footer"
+      class="text-center overlay bg-dark text-white  py-1"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>
+              Copyright © <span>2019</span> Veggies | Design by
+              <a
+                href="https://ojigboleo.netlify.com/"
+                target="_blank"
+                class="nav-link text-white d-inline"
+              >
+                Leo Ojigbo</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/popper.js"></script>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+      //   <span id="year"></span> code for auto date gen
+
+      // Configure Carousel Slider
+      $(".carousel").carousel({
+        interval: 6000,
+        pause: "hover"
+      });
+
+      $(".slider").slick({
+        infinite: true,
+        slideToShow: 1,
+        slideToScroll: 1
+      });
+      function incrementValue() {
+        var value = parseInt(document.getElementById("number").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById("number").value = value;
+      }
+    </script>
+  </body>
+</html>
