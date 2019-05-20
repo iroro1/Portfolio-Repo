@@ -1,6 +1,6 @@
 :root {
-  --primary-color: rgba(24, 197, 8, 0.6);
-  --msecondary-color: rgba(48, 238, 58, 0.9);
+  --primary-color: rgba(8, 159, 197, 0.6);
+  --msecondary-color: rgba(9, 187, 231, 0.9);
 }
 * {
   padding: 0;
