@@ -13,7 +13,7 @@ body {
   background-image: linear-gradient(-130deg, rgb(51, 51, 51), rgb(16, 19, 14));
 }
 .navbar-brand , #navbarNav, h1, h2, h3, h4, h5, h6{
-  font-family: "Cinzel Decorative", cursive;
+  font-family: "Verdana, Geneva, Tahoma, sans-serif";
 }
 #address a{
   text-decoration: none
