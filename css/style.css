@@ -12,12 +12,28 @@ body {
   overflow-x: hidden;
   background-image: linear-gradient(-130deg, rgb(51, 51, 51), rgb(16, 19, 14));
 }
-.navbar-brand , #navbarNav, h1, h2, h3, h4, h5, h6{
+.navbar-brand,
+#navbarNav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Verdana, Geneva, Tahoma, sans-serif";
 }
-#address a{
-  text-decoration: none
+#address a {
+  text-decoration: none;
 }
+.jumbotron:last-child {
+  overflow-y: scroll;
+  max-height: 30rem;
+}
+
+.exp {
+  cursor: pointer;
+}
+
 .cont {
   width: 200px;
   height: 200px;
@@ -182,9 +198,9 @@ table {
     width: 96%;
     margin: auto;
   }
-.spre{
+  .spre {
     margin: auto;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 1rem;
   }
 
@@ -209,9 +225,9 @@ table {
     font-size: 1rem;
   }
   #address {
-    width: 85%;
     margin: auto;
     font-size: 1rem;
+    text-align: center;
   }
 
   table {
@@ -219,10 +235,9 @@ table {
   }
 }
 @media (max-width: 380px) {
-
   #address {
     font-size: 0.7rem;
-    text-align: center
+    text-align: center;
   }
   #address h2 {
     font-size: 1rem;
