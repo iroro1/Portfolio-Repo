@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+  color: peru;
+}
+
+p {
+  text-align: center;
+}
+
+.container {
+  margin: 0.5rem auto;
+  max-width: 60%;
+}
+input {
+  text-align: center;
+  padding: 0.5rem;
+  color: black;
+  display: inline-block;
+}
+input:focus {
+  background: rgb(204, 204, 204);
+}
+
+/* #enter {
+  padding: 0.6rem;
+  background: rgb(89, 139, 14);
+  color: white;
+  border: none;
+}
+#enter:hover {
+  background: rgb(156, 255, 6);
+} */
+/* ul {
+  width: 50%;
+  margin: 0 auto;
+} */
+ul li {
+  list-style: georgian;
+  color: rebeccapurple;
+  margin: 1rem, 0;
+  padding: 0.3rem;
+  border-bottom: 1px solid rgb(212, 209, 209);
+}
+li {
+  display: flex;
+  justify-content: space-between;
+}
+.remove {
+  padding: 0.2rem;
+  background: rgb(163, 32, 32);
+  color: white;
+  border: none;
+}
+.remove:hover {
+  background: rgb(218, 22, 22);
+  color: white;
+}
+/* .coolTitle {
+  text-align: center;
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 40px;
+  transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: -1px -1px 0 firebrick, -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick, -4px -4px 0 firebrick, -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick, -7px -7px 0 firebrick, -8px -8px 0 firebrick,
+    -30px 20px 40px dimgrey;
+} */
+
+.done {
+  text-decoration: line-through;
+}
+
+/* Using the Shopping List files from the previous videos update the shopping list app to do the following:
+
+1. If you click on the list item, it toggles the .done class on and off.
+
+2. Add buttons next to each list item to delete the item when clicked on its corresponding delete button.
+
+3. BONUS: When adding a new list item, it automatically adds the delete button next to it. 
+
+Good Luck!
+
+Please note that: 
+
+In the browser most code is event driven and writing interactive applications in JavaScript is often about waiting for and reacting to events, to alter the behaviour of the browser in some way. Events occur whenever something happens on a page based on user interaction. These are all defined by w3c.
+
+To react to an event you listen for it and supply a function which will be called by the browser when the event occurs. This function is known as a callback. To read more, check out this link:http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/ */
