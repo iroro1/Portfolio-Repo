@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Sriracha&display=swap");
+body {
+  background: linear-gradient(to right, rgb(138, 7, 252), rgb(211, 16, 173));
+  overflow: hidden;
+}
+
+.card-bg::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.643);
+  z-index: 1;
+}
+#text {
+  font-family: "Indie Flower", cursive;
+}
+#author {
+  font-family: "Sriracha", cursive;
+}
+.main {
+  background: rgba(0, 0, 0, 0.637);
+  height: 100vh;
+}
+
+#quote-box {
+  height: 100%;
+  z-index: 2;
+}
