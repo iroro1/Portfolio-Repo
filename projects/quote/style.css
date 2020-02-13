@@ -13,10 +13,12 @@ body {
   z-index: 1;
 }
 #text {
-  font-family: "Indie Flower", cursive;
+  /* font-family: "Indie Flower", cursive; */
+  font-family: "Verdana, Geneva, Tahoma, sans-serif";
 }
 #author {
-  font-family: "Sriracha", cursive;
+  /* font-family: "Sriracha", cursive; */
+  font-family: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif";
 }
 .main {
   background: rgba(0, 0, 0, 0.637);
