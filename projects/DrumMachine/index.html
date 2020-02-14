@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../quote/bootstrap-4.1.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../quote/fontawesome/css/all.min.css" />
+    <title>Drum Machine</title>
+    <style>
+      body {
+        background: rgb(65, 13, 13);
+      }
+      .btn {
+        font-size: 1.1rem;
+      }
+      h1 {
+        color: white;
+        padding: 1rem;
+        text-shadow: 5px 2px 1px #000;
+      }
+      .card-body {
+        background: rgba(0, 0, 0, 0.143);
+        display: flex;
+        flex-direction: column;
+        justify-items: stretch;
+        align-content: space-around;
+      }
+      .center {
+        margin: 0 auto;
+        max-width: 100%;
+        background: rgb(230, 201, 201);
+      }
+      #display {
+        background: #000;
+        padding: 0.5rem;
+        height: 2.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Outer Wrapper -->
+    <div id="drum-machine">
+      <h1 class="text-center">
+        Drum Machine | <small class="h5">By Leo Ojigbo</small>
+      </h1>
+
+      <!--  -->
+      <div class="text-center text-light" id="display"></div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div class="container ">
+            <div class="container card-body ">
+              <div class="container buttons">
+                <button class="drum-pad btn btn-success p-5 m-1" id="q">
+                  Q
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="Q"
+                    src="./sound/Q.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+                <button class=" drum-pad btn btn-success p-5 m-1" id="w">
+                  W
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="W"
+                    src="./sound/W.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+                <button class="drum-pad btn btn-success p-5 m-1" id="e">
+                  E
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="E"
+                    src="./sound/E.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+              </div>
+              <div class="container">
+                <button
+                  class="drum-pad btn btn-danger text-white p-5 m-1"
+                  id="a"
+                >
+                  A
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="A"
+                    src="./sound/A.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+                <button
+                  class="drum-pad btn btn-danger text-white p-5 m-1"
+                  id="s"
+                >
+                  S
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="S"
+                    src="./sound/S.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+                <button
+                  class="drum-pad btn btn-danger text-white p-5 m-1"
+                  id="d"
+                >
+                  D
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="D"
+                    src="./sound/D.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+              </div>
+              <div class="container">
+                <button class="drum-pad btn btn-primary p-5 m-1" id="z">
+                  Z
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="Z"
+                    src="./sound/Z.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+                <button class="drum-pad btn btn-primary p-5 m-1" id="x">
+                  X
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="X"
+                    src="./sound/X.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+                <button class="drum-pad btn btn-primary p-5 m-1" id="c">
+                  C
+                  <audio
+                    class="clip"
+                    volume="0.1"
+                    id="C"
+                    src="./sound/C.wav"
+                    autoplay="false"
+                  ></audio>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row ">
+        <div class="foot col">
+          <div class="container">
+            <div class=" pt-3  p-2 text-white text-center">
+              <p>
+                Copyright &copy; . Leo Ojigbo
+                <a href="https://www.linkedin.com/in/iroro1/" target="_blank"
+                  ><i class=" fab fa-linkedin  ml-3"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="../quote/bootstrap-4.1.3-dist/js/bootstrap.js"></script>
+    <script src="../quote/bootstrap-4.1.3-dist/jquery/jquery-3.3.1.js"></script>
+    <script src="../quote/bootstrap-4.1.3-dist/jquery/popper.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
