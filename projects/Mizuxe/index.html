@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      href="../quote/fontawesome/css/all.min.css"
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
@@ -490,37 +490,37 @@
       $("body").scrollspy({ target: "#main-nav" });
 
       // Smooth Scrolling
-      // $("#main-nav ,.navbar a, .btn").on("click", function(event) {
-      //   if (this.hash !== "") {
-      //     event.preventDefault();
+      $("#main-nav ,.navbar a, .btn").on("click", function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
 
-      //     const hash = this.hash;
+          const hash = this.hash;
 
-      //     $("html, body").animate(
-      //       {
-      //         scrollTop: $(hash).offset().top + 100
-      //       },
-      //       800,
-      //       function() {
-      //         window.location.hash = hash;
-      //       }
-      //     );
-      //   }
-      // });
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top + 100
+            },
+            800,
+            function() {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
       $(".navbar a, .btn").on("click", function(event) {
-  if (this.hash !== "") {
-    event.preventDefault();
+        if (this.hash !== "") {
+          event.preventDefault();
 
-    const hash = this.hash;
+          const hash = this.hash;
 
-    $("html, body").animate(
-      {
-        scrollTop: $(hash).offset().top - 100
-      },
-      1200
-    );
-  }
-});
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100
+            },
+            1200
+          );
+        }
+      });
     </script>
   </body>
 </html>
