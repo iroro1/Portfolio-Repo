@@ -33,31 +33,31 @@ const colChange = () => {
 };
 const playTrack = e => {
   if (e.target.getAttribute("id") === "q") {
-    display.textContent = "Drum rolls from the 80s";
+    display.textContent = "Alien Fx tone beats.";
     return Q.play();
   } else if (e.target.getAttribute("id") === "w") {
-    display.textContent = "Some lovely beats to enlighten the soul";
+    display.textContent = "Some lovely frenzied beats to enlighten the soul";
     return W.play();
   } else if (e.target.getAttribute("id") === "e") {
-    display.textContent = "Old Skool drum rolls";
+    display.textContent = "Old Skool Soul Pride.";
     return E.play();
   } else if (e.target.getAttribute("id") === "a") {
-    display.textContent = "Metal muzik ..........";
+    display.textContent = "Wahhhhhh Guitar ..........";
     return A.play();
   } else if (e.target.getAttribute("id") === "s") {
-    display.textContent = "Lets rock and roll";
+    display.textContent = "Lets rock and roll Boy slide Guitar";
     return S.play();
   } else if (e.target.getAttribute("id") === "d") {
-    display.textContent = "Electric guitar..";
+    display.textContent = "Electric guitar Tight waka Tone..";
     return D.play();
   } else if (e.target.getAttribute("id") === "z") {
-    display.textContent = "Cool night sky.";
+    display.textContent = "Cool night sky, slow ballad guitar.";
     return Z.play();
   } else if (e.target.getAttribute("id") === "x") {
-    display.textContent = "Action time get ready..";
+    display.textContent = "Action time get ready for club groove...";
     return X.play();
   } else {
-    display.textContent = "OHHHHHHHk lets dance..";
+    display.textContent = "HipHop Bell and Harp...";
     return C.play();
   }
 };

@@ -19,7 +19,7 @@ h1 {
   align-items: center;
 }
 .drum-pad {
-  max-width: 30%;
+  width: 30%;
 }
 #display {
   background: #000;
