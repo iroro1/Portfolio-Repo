@@ -244,10 +244,21 @@ table {
 
 /* tablets */
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   .showcase {
     width: 100%;
     margin: auto;
   }
+  /* .showcase {
+    background: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+  } */
   .spre {
     margin: auto;
     font-family: "Courier New", Courier, monospace;
