@@ -1,2 +1,3 @@
-# Portfolio-Repo
-My Portfolio Website hosted on netlify.
+# POJIGBO.PRO
+Ojigbo.Pro Official github by Leo Ojigbo.
+Freelancer in Tech, Business and Education.
