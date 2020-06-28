@@ -313,7 +313,7 @@ table {
     background: rgba(133, 39, 39, 0.582);
     padding: 2rem;
     width: 100%;
-    margin:2rem auto;
+    margin: auto;
   }
 }
 
@@ -336,6 +336,6 @@ table {
     background: rgba(133, 39, 39, 0.582);
     padding: 1rem;
     width: 100%;
-    margin:1rem auto;
+    margin: auto;
   }
 }
