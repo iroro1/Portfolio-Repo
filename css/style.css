@@ -283,6 +283,16 @@ table {
   table {
     font-size: 0.7rem;
   }
+  .jum2 h1{
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+  .jum2{
+    background: rgba(133, 39, 39, 0.582);
+    padding: 2rem;
+    width: 100%;
+    margin: 5rem auto;
+  }
 }
 @media (max-width: 380px) {
   #address {
@@ -303,6 +313,29 @@ table {
     background: rgba(133, 39, 39, 0.582);
     padding: 2rem;
     width: 100%;
-    margin: auto;
+    margin:2rem auto;
+  }
+}
+
+@media (max-width: 320px) {
+  #address {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  #address h2 {
+    font-size: 1rem;
+  }
+  .socio i {
+    font-size: 1.5rem;
+  }
+  .jum2 h1{
+    margin: 1rem auto;
+    font-size: 1.4rem;
+  }
+  .jum2{
+    background: rgba(133, 39, 39, 0.582);
+    padding: 1rem;
+    width: 100%;
+    margin:1rem auto;
   }
 }
