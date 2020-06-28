@@ -269,11 +269,21 @@ table {
     width: 90%;
     margin: auto;
   }
+  .jum2 h1{
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+  .jum2{
+    background: rgba(136, 30, 30, 0.582);
+    padding: 2rem;
+    width: 100%;
+    margin:  auto;
+  }
 }
 /* smartphones */
 @media (max-width: 450px) {
   .showcase {
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .cv .btn {
@@ -299,7 +309,7 @@ table {
     font-size: 2rem;
   }
   .jum2{
-    background: rgba(133, 39, 39, 0.582);
+    background: rgba(136, 30, 30, 0.582);
     padding: 2rem;
     width: 100%;
     margin:  auto;
