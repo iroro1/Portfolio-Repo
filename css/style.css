@@ -195,7 +195,7 @@ nav .hed {
   margin: auto;
 }
 
-marquee img{
+marquee img {
   width: 20rem;
   box-shadow: black 3px 2px 15px;
 }
@@ -303,6 +303,19 @@ table {
 /* smartphones */
 @media (max-width: 450px) {
   .showcase {
+    background: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat center center/cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+  }
+  .show-overlay {
+    background: rgba(0, 0, 0, 0.267);
+    height: 60vh;
+  }
+  .showcase {
     width: 100%;
     margin: auto;
   }
@@ -372,7 +385,19 @@ table {
 }
 
 @media (max-width: 320px) {
- 
+  .showcase {
+    background: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat center center/cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+  }
+  .show-overlay {
+    background: rgba(0, 0, 0, 0.267);
+    height: 80vh;
+  }
   #address {
     font-size: 0.7rem;
     text-align: center;
