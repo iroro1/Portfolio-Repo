@@ -14,9 +14,17 @@ body {
   background-image: linear-gradient(-130deg, rgb(51, 51, 51), rgb(16, 19, 14));
   background: white;
 }
-.importfolio{
-  border-radius: 50%;
-  width: 5rem;
+.importfolio {
+  border-radius: 10%;
+  width: 10rem;
+}
+.importfolio:hover {
+  transform: scale(1.2);
+  transition: all 2s;
+}
+.webportfolio {
+  border-radius: 10%;
+  width: 10rem;
 }
 .navbar-brand,
 #navbarNav,
@@ -122,12 +130,12 @@ h6 {
   align-items: center;
   z-index: 1;
 }
-#services{
+#services {
   background: rgb(10, 20, 63);
   padding: 5rem;
 }
-.homeShow{
-  padding: 3rem ;
+.homeShow {
+  padding: 3rem;
   margin: auto;
   /* height: 80vh; */
 }
@@ -168,55 +176,62 @@ nav .hed {
   font-size: 1.2rem !important;
 }
 .showcase {
-  background: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
+  background: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    no-repeat center center/cover;
   position: relative;
   background-attachment: fixed;
-  height: 80vh;
+  height: 60vh;
   width: 100%;
   margin: auto;
 }
+
 .showcase2 {
-  background: url("https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center center/cover;
+  background: url("https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+    no-repeat center center/cover;
   position: relative;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
   margin: auto;
+}
+
+marquee img{
+  width: 20rem;
+  box-shadow: black 3px 2px 15px;
 }
 .show-area {
   z-index: 2;
 }
 .show-overlay {
   background: rgba(0, 0, 0, 0.267);
-  height: 80vh;
-
+  height: 60vh;
 }
 .show-overlay2 {
   background: rgba(0, 0, 0, 0.719);
-
 }
-.jum{
+.jum {
   background: rgba(24, 47, 112, 0.616);
   padding: 2rem;
 }
-.jum h1{
+.jum h1 {
   margin: 5rem auto;
 }
-.jum2{
+.jum2 {
   background: rgba(133, 39, 39, 0.582);
   padding: 2rem;
+  border-radius: 2%;
   width: 60%;
   margin: 5rem auto;
 }
 
-.jum2 h3{
+.jum2 h3 {
   margin: 5rem auto;
 }
-#team{
+#team {
   height: 100%;
 }
 
-.leimg{
+.leimg {
   width: 5rem;
   border-radius: 50%;
   margin: 2rem auto;
@@ -244,21 +259,26 @@ table {
 
 /* tablets */
 @media (max-width: 768px) {
-  body{
+  .showcase {
+    background: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat center center/cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 30vh;
+    width: 100%;
+    margin: auto;
+  }
+  .show-overlay {
+    background: rgba(0, 0, 0, 0.267);
+    height: 30vh;
+  }
+  body {
     overflow-x: hidden;
   }
   .showcase {
     width: 100%;
     margin: auto;
   }
-  /* .showcase {
-    background: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
-    position: relative;
-    background-attachment: fixed;
-    height: 80vh;
-    width: 100%;
-    margin: auto;
-  } */
   .spre {
     margin: auto;
     font-family: "Courier New", Courier, monospace;
@@ -269,15 +289,15 @@ table {
     width: 90%;
     margin: auto;
   }
-  .jum2 h1{
+  .jum2 h1 {
     margin: 1rem auto;
     font-size: 2rem;
   }
-  .jum2{
+  .jum2 {
     background: rgba(136, 30, 30, 0.582);
     padding: 2rem;
     width: 100%;
-    margin:  auto;
+    margin: auto;
   }
 }
 /* smartphones */
@@ -304,18 +324,31 @@ table {
   table {
     font-size: 0.7rem;
   }
-  .jum2 h1{
+  .jum2 h1 {
     margin: 1rem auto;
     font-size: 2rem;
   }
-  .jum2{
+  .jum2 {
     background: rgba(136, 30, 30, 0.582);
     padding: 1rem;
     width: 100%;
-    margin:  auto;
+    margin: auto;
   }
 }
 @media (max-width: 380px) {
+  .showcase {
+    background: url("https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      no-repeat center center/cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 80vh;
+    width: 100%;
+    margin: auto;
+  }
+  .show-overlay {
+    background: rgba(0, 0, 0, 0.267);
+    height: 80vh;
+  }
   #address {
     font-size: 0.7rem;
     text-align: center;
@@ -326,11 +359,11 @@ table {
   .socio i {
     font-size: 1.5rem;
   }
-  .jum2 h1{
+  .jum2 h1 {
     margin: 1rem auto;
     font-size: 1.5rem;
   }
-  .jum2{
+  .jum2 {
     background: rgba(133, 39, 39, 0.582);
     padding: 2rem;
     width: 100%;
@@ -339,6 +372,7 @@ table {
 }
 
 @media (max-width: 320px) {
+ 
   #address {
     font-size: 0.7rem;
     text-align: center;
@@ -349,11 +383,11 @@ table {
   .socio i {
     font-size: 1.5rem;
   }
-  .jum2 h1{
+  .jum2 h1 {
     margin: 1rem auto;
     font-size: 1.4rem;
   }
-  .jum2{
+  .jum2 {
     background: rgba(133, 39, 39, 0.582);
     padding: 1rem;
     width: 100%;
