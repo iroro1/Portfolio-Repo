@@ -1,18 +1,16 @@
-$(function() {
+$(function () {
   "use strict";
 
   //===== Prealoder
 
-  $(window).on("load", function(event) {
-    $(".preloader")
-      .delay(500)
-      .fadeOut(500);
+  $(window).on("load", function (event) {
+    $(".preloader").delay(100).fadeOut(100);
     $("#logoTop").addClass("white");
   });
 
   //===== Sticky
 
-  $(window).on("scroll", function(event) {
+  $(window).on("scroll", function (event) {
     var scroll = $(window).scrollTop();
     if (scroll < 20) {
       $("#logoTop").addClass("white");
@@ -30,45 +28,40 @@ $(function() {
 
   var scrollLink = $(".page-scroll");
   // Active link switching
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var scrollbarLocation = $(this).scrollTop();
 
-    scrollLink.each(function() {
+    scrollLink.each(function () {
       var sectionOffset = $(this.hash).offset().top - 73;
 
       if (sectionOffset <= scrollbarLocation) {
-        $(this)
-          .parent()
-          .addClass("active");
-        $(this)
-          .parent()
-          .siblings()
-          .removeClass("active");
+        $(this).parent().addClass("active");
+        $(this).parent().siblings().removeClass("active");
       }
     });
   });
 
   //===== close navbar-collapse when a  clicked
 
-  $(".navbar-nav a").on("click", function() {
+  $(".navbar-nav a").on("click", function () {
     $(".navbar-collapse").removeClass("show");
   });
 
-  $(".navbar-toggler").on("click", function() {
+  $(".navbar-toggler").on("click", function () {
     $(this).toggleClass("active");
   });
 
-  $(".navbar-nav a").on("click", function() {
+  $(".navbar-nav a").on("click", function () {
     $(".navbar-toggler").removeClass("active");
   });
 
   //===== Sidebar
 
-  $('[href="#side-menu-left"], .overlay-left').on("click", function(event) {
+  $('[href="#side-menu-left"], .overlay-left').on("click", function (event) {
     $(".sidebar-left, .overlay-left").addClass("open");
   });
 
-  $('[href="#close"], .overlay-left').on("click", function(event) {
+  $('[href="#close"], .overlay-left').on("click", function (event) {
     $(".sidebar-left, .overlay-left").removeClass("open");
   });
 
@@ -89,52 +82,50 @@ $(function() {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3
-        }
+          slidesToShow: 3,
+        },
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2
-        }
+          slidesToShow: 2,
+        },
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 1,
-          arrows: false
-        }
-      }
-    ]
+          arrows: false,
+        },
+      },
+    ],
   });
 
   //===== Isotope Project 4
 
-  $(".container").imagesLoaded(function() {
+  $(".container").imagesLoaded(function () {
     var $grid = $(".grid").isotope({
       // options
-      transitionDuration: "1s"
+      transitionDuration: "1s",
     });
 
     // filter items on button click
-    $(".portfolio-menu ul").on("click", "li", function() {
+    $(".portfolio-menu ul").on("click", "li", function () {
       var filterValue = $(this).attr("data-filter");
       $grid.isotope({
-        filter: filterValue
+        filter: filterValue,
       });
     });
 
     //for menu active class
-    $(".portfolio-menu ul li").on("click", function(event) {
-      $(this)
-        .siblings(".active")
-        .removeClass("active");
+    $(".portfolio-menu ul li").on("click", function (event) {
+      $(this).siblings(".active").removeClass("active");
       $(this).addClass("active");
       event.preventDefault();
     });
@@ -151,13 +142,13 @@ $(function() {
     autoplay: true,
     autoplaySpeed: 5000,
     speed: 800,
-    slidesToShow: 1
+    slidesToShow: 1,
   });
 
   //====== Magnific Popup
 
   $(".video-popup").magnificPopup({
-    type: "iframe"
+    type: "iframe",
     // other options
   });
 
@@ -166,14 +157,14 @@ $(function() {
   $(".image-popup").magnificPopup({
     type: "image",
     gallery: {
-      enabled: true
-    }
+      enabled: true,
+    },
   });
 
   //===== Back to top
 
   // Show or hide the sticky footer button
-  $(window).on("scroll", function(event) {
+  $(window).on("scroll", function (event) {
     if ($(this).scrollTop() > 600) {
       $(".back-to-top").fadeIn(200);
     } else {
@@ -182,12 +173,12 @@ $(function() {
   });
 
   //Animate the scroll to yop
-  $(".back-to-top").on("click", function(event) {
+  $(".back-to-top").on("click", function (event) {
     event.preventDefault();
 
     $("html, body").animate(
       {
-        scrollTop: 0
+        scrollTop: 0,
       },
       1500
     );
