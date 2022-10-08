@@ -1,6 +1,6 @@
 :root {
-  --primary-color: rgba(95, 250, 255, 0.6);
-  --msecondary-color: rgba(9, 187, 231, 0.9);
+  --primary-color: rgba(255, 241, 43, 0.651);
+  --msecondary-color: rgba(227, 231, 9, 0.726);
 }
 * {
   padding: 0;
@@ -207,7 +207,7 @@ marquee img {
   height: 60vh;
 }
 .show-overlay2 {
-  background: rgba(0, 0, 0, 0.719);
+  background: rgba(10, 10, 10, 0.616);
 }
 .jum {
   background: rgba(24, 47, 112, 0.616);
